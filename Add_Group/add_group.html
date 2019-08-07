@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Group</title>
+    <link rel="stylesheet" href="add_group.css">
+
+  </head>
+  <body>
+
+    <h1 id = title> Add Group </h1>
+
+
+
+  </body>
+
+
+
+  <div class="card" style= "width: 30rem; height: 20rem;" >
+  <div class="card-body">
+      <form class="group_add"  method="post">
+        <h3>Group Name: <input type="text" name="group_name"> </h3>
+        <h3>Description: <input type="text" name="description"> </h3>
+        <h3>Who would you like to invite? <input id = "emails" type="email" name="email"> </h3>
+        <div id = "emails"> </div>
+        <button class = "add_group_button" id = "add_email" type="button">Add another email</button> <br>
+        <input class = "add_group_button"id = "submit" type = "submit" value = 'Submit'>
+
+
+      </form>
+  </div>
+
+
+
+</div>
+    <script src = "add_group.js"> </script>
+</html>

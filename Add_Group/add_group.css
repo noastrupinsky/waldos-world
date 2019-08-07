@@ -1,0 +1,27 @@
+body{
+  background-image: url("/Users/noa.strupinsky/blue_pages/img/add_group_background.png")
+}
+
+.card{
+  border-style:groove;
+  color: black;
+  text-align: left;
+  box-shadow: 10px 10px;
+  position: relative;
+  left: 460px;
+  top: 100px;
+}
+
+#title{
+  text-align: center;
+  text-decoration: underline;
+}
+
+input{
+
+  border-radius: 10px;
+}
+
+.add_group_button{
+  width: 100px;
+}
