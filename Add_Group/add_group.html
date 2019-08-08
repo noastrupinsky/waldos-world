@@ -15,16 +15,22 @@
   </body>
 
 
+  <button onclick = "location.href='/Users/noa.strupinsky/blue_pages/public/home.html'" class = "home" type = "button">Home</button>
 
   <div class="card" style= "width: 30rem; height: 20rem;" >
   <div class="card-body">
-      <form class="group_add"  method="post">
+      <form  class="group_add"  method="post" action="https://us-central1-waldo-7996a.cloudfunctions.net/email">
         <h3>Group Name: <input type="text" name="group_name"> </h3>
         <h3>Description: <input type="text" name="description"> </h3>
-        <h3>Who would you like to invite? <input id = "emails" type="email" name="email"> </h3>
-        <div id = "emails"> </div>
+        <h3>Who would you like to invite?  </h3>
+
+        <div id = "div1">
+          <input class = "emails" type="email" name="email">
+        </div>
+
         <button class = "add_group_button" id = "add_email" type="button">Add another email</button> <br>
-        <input class = "add_group_button"id = "submit" type = "submit" value = 'Submit'>
+        <br>
+        <input class = "add_group_button" id = "submit" type = "submit" value = 'Submit'>
 
 
       </form>

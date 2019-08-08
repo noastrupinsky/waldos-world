@@ -18,10 +18,10 @@ body{
 }
 
 input{
-
   border-radius: 10px;
 }
 
 .add_group_button{
-  width: 100px;
+  width: 150px;
+  border-radius: 10px;
 }
