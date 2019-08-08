@@ -1,0 +1,15 @@
+.heading{
+  display: inline;
+}
+
+body{
+  background-image: url(/Users/noa.strupinsky/blue_pages/public/join_group/background_join.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.checkbox_email{
+  display: inline;
+}

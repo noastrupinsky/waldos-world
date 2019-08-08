@@ -19,9 +19,12 @@ body{
 
 input{
   border-radius: 10px;
+  width: 400px;
 }
 
 .add_group_button{
   width: 150px;
   border-radius: 10px;
 }
+
+\
