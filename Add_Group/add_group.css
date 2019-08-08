@@ -10,6 +10,7 @@ body{
   position: relative;
   left: 460px;
   top: 100px;
+  border-radius: 10px;
 }
 
 #title{
