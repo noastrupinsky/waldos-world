@@ -1,18 +1,40 @@
 body {
 
-    background-image: url("blue-background.jpg");
+    background-image: url("logo_background.jpg");
     background-repeat: no-repeat;
     background-position: ;
     background-attachment: scroll;
     background-size: cover;
 }
+* {
+  box-sizing: border-box;
+}
 
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row2{
+  position: relative;
+  left:240px;
+}
 h1 {
   position: relative;
   top: -25px;
   left: 410px;
   font-size: 100px;
-  color: navy ;
+  color: #866266;
 }
 
 #title{
@@ -28,52 +50,69 @@ h2 {
   top: 0px;
   left:650px;
   font-size: 40px;
-  color: teal;
+  color: 	#49879D;
 }
 
-  .button {
-  background-color: navy;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
+
+.button{
+  width: 200px;
+  height: 200px;
   text-decoration: none;
   display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border-style: none;
+  color: white;
+  background-color: #866266;
+  border-radius: 100%;
+  overflow:scroll;
+  text-align: center;
   font-size: 50px;
-  margin: 20px 20px;
+  float: left;
+  filter: drop-shadow(0 0 30px #333);
+  transition-duration: 0.4;
+
 }
 
-.button1 {
+.button:hover{
+  background-color: 	#A77E82;
+}
+
+.round-button:active{
+  background-color: #2980b9;
+}
+/*
+#button1 {
   border-radius: 50%;
 position: relative;
 top: 100px;
 left:500px;
 }
 
-.button2 {
+#button2 {
   border-radius: 50%;
   position: relative;
   top: -80px;
   left:160px
 }
-.button3 {
+#button3 {
   border-radius: 50%;
   position: relative;
   top: -260px;
   left:800px
   }
-.button4 {
+#button4 {
   border-radius: 50%;
   position: relative;
   top: -300px;
   left:300px
   }
-.button5 {
+#button5 {
   border-radius: 50%;
   position: relative;
   top: -470px;
   left:610px
-  }
+  } */
 
 h3 {
   position: relative;
@@ -86,15 +125,15 @@ h3 {
 /* Navbar container */
 .navbar {
   font-size: 20px
-  background-color: #333;
+  background-color: 	#49879D;
   font-family: Arial;
-position: relative;
-  top: -1100px;
-  left:-160px
+  position: relative;
+  bottom: 500px;
+  right: 1100px;
 }
 
 /* Links inside the navbar */
-.navbar a {
+.navbar a  {
   float: left;
   font-size: 20px;
   color: darkgray;
@@ -108,8 +147,9 @@ position: relative;
   float: left;
   font-size: 20px
   overflow: hidden;
-  font-family: Arial;
+  /* font-family: Arial; */
   position: relative;
+  color: darkgray;
 }
 
 /* Dropdown button */
@@ -126,7 +166,7 @@ position: relative;
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: teal;
+  background-color: 	#49879D;
 }
 
 /* Dropdown content (hidden by default) */
@@ -134,7 +174,7 @@ position: relative;
   display: none;
   font-size: 27px
   position: absolute;
-  background-color: teal;
+  background-color: 	#49879D;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -152,7 +192,7 @@ position: relative;
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: teal;
+  background-color:	#49879D;
 }
 
 /* Show the dropdown menu on hover */
