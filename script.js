@@ -1,4 +1,6 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -15,7 +17,9 @@ function myFunction() {
       return vars;
  }
 
- var name = getUrlVars()["group_name"];
- document.getElementById("variable").innerHTML=name;
+ var group_name = getUrlVars()["group_name"];
+ // document.getElementById("name_variable").innerHTML= name;
+ document.getElementById("group_name_variable").innerHTML= group_name;
+
 
 console.log(name);
