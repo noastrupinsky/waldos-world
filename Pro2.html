@@ -80,15 +80,33 @@ span.psw {
     <input type="text" placeholder="Enter Username" name="uname" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" required
+     id="myInput"><br><br>
+    <input type="checkbox" onclick="myFunction()">Show Password</input>
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+        <button type="submit"  formaction="file:///Users/sandra/Documents/waldos-world/finalpro4.html"class="pure-button pure-button-primary">Login</button>
 
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+    </fieldset>
+
+
+
+
   </div>
 
   <div class="container" style="background-color:lightblue">
+    <span class="psw">Forgot <a href="file:///Users/sandra/Documents/waldos-world/finalpro3.html">password?</a></span>
+    <span class="psw">Dont have a <a href="file:///Users/sandra/Documents/finalpro2.html">accout?</a></span>
+
+
   </div>
 </form>
 
