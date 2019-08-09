@@ -1,65 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <link rel = "stylesheet" href ="styles.css">
-  </head>
-  <body>
-  <h1 id = "<title">
-      HOME
-  </h1>
-
-  <h2>
-  Groups
-  </h2>
-  <h3>
-
-  </h3>
-
-  <p id = "RBC">
-    <button id = "variable"class="button button1"></button>
-  </p>
-  <p id = "GWC">
-    <button class="button button2">GWC</button>
-  </p>
-  <p id = "2020">
-    <button class="button button3">2020</button>
-  </p>
-  <p id = "camp">
-    <button class="button button4">Camp</button>
-  </p>
-
-    <button class="button button5">Friends</button>
-
-  </p>
-  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#settings">Settings</a>
-    <div class="dropdown">
-      <button class="dropbtn">Dropdown
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="Add_Group/add_group.html">Add Group</a>
-        <a href="#">Delete Group</a>
-      </div>
-    </div>
-  </div>
-</html>
-
-<!DOCTYPE html>
-<html>
 <head>
-  <link rel= "stylesheet" href= "searchbar.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: lightblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
 </head>
 <body>
-<div class="wrapper">
-  <div class="container">
-    <input type="text" class="input" placeholder="What are you looking for?">
-    <input type="button" value="search" class="close-btn">
-  </div>
-</div>
-</body>
 
-<script src = "script.js"></script>
+<h2>Login Form</h2>
+
+<form action="">
+  <div class="imgcontainer">
+    <img src="fold.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required
+     id="myInput"><br><br>
+    <input type="checkbox" onclick="myFunction()">Show Password</input>
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+        <button type="submit"  formaction="index.html"class="pure-button pure-button-primary">Login</button>
+
+    </fieldset>
+
+
+
+
+  </div>
+
+  <div class="container" style="background-color:lightblue">
+    <span class="psw">Forgot <a href="file:///Users/sandra/Documents/waldos-world/finalpro3.html">password?</a></span>
+    <span class="psw">Dont have a <a href="file:///Users/sandra/Documents/finalpro2.html">accout?</a></span>
+
+
+  </div>
+</form>
+
+</body>
 </html>
