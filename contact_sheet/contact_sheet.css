@@ -1,0 +1,23 @@
+
+body{
+  background-image: url(/Users/noa.strupinsky/blue_pages/public/contact_sheet/background_contact.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+#home{
+  float:left;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  transition-duration: 0.4s;
+}
+
+#home:hover{
+  background-color: #F1948A  ;
+  color: white;
+}

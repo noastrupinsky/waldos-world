@@ -7,10 +7,10 @@ function getUrlVars() {
     });
     return vars;
 }
-var number = getUrlVars()["group_name"];
+var name = getUrlVars()["group_name"];
 
-console.log(number);
-document.getElementById("variable").innerHTML=number;
+console.log(name);
+document.getElementById("variable").innerHTML=name;
 
 
 let email_user;
@@ -28,7 +28,7 @@ var titter_check = document.getElementById('twitter_check');
 
 var button = document.getElementById('test');
 
-let link = "/Users/noa.strupinsky/blue_pages/public/home.html?";
+let link = "../home.html?";
 
 
 
