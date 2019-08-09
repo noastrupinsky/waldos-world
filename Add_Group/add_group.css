@@ -1,5 +1,9 @@
 body{
+<<<<<<< HEAD
   background-image: url(/Users/noa.strupinsky/blue_pages/public/Add_Group/add_group_background.png)
+=======
+  background-image: url(../add_group_background.png)
+>>>>>>> d0867ad8421d26990126792977dfabfb33ab0475
 }
 
 .card{
