@@ -18,9 +18,18 @@ function myFunction() {
  }
  var group_name = getUrlVars()["group_name"];
  var test = getUrlVars()["?"];
+ console.log(group_name);
 
- document.getElementById("group_name_variable").innerHTML= group_name;
+
+ let style = document.getElementById("group_name_variable");
+ if (group_name == undefined){
+   style.style.display = "none";
+ }
+
+document.getElementById("group_name_variable").innerHTML= group_name;
 
 let link = "contact_sheet/contact_sheet.html";
+
 link = link + window.location.search;
-document.getElementById("link").innerHTML= link;
+console.log(link);
+document.getElementById("link").innerHTML = link;

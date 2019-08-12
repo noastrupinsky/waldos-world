@@ -31,7 +31,7 @@ var button = document.getElementById('test');
 let link = "../home.html";
 
 link = link + window.location.search;
-
+console.log(link);
 button.onclick = function(){
   var name = document.getElementById('name').value;
   link = link + "&name=" + name;
@@ -65,4 +65,5 @@ button.onclick = function(){
 
 
    location.href = link;
+   console.log(link);
 }
