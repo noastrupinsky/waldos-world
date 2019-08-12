@@ -7,10 +7,10 @@ function getUrlVars() {
     });
     return vars;
 }
-var name = getUrlVars()["group_name"];
+var group_name = getUrlVars()["group_name"];
 
 console.log(name);
-document.getElementById("variable").innerHTML=name;
+document.getElementById("variable").innerHTML=group_name;
 
 
 let email_user;
@@ -28,13 +28,13 @@ var titter_check = document.getElementById('twitter_check');
 
 var button = document.getElementById('test');
 
-let link = "../home.html?";
+let link = "../home.html";
 
-
+link = link + window.location.search;
 
 button.onclick = function(){
   var name = document.getElementById('name').value;
-  link = link + "name=" + name;
+  link = link + "&name=" + name;
 
   if (email_check.checked == true) {
     email_user = document.getElementById('email_user').value;

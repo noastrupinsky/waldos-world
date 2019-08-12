@@ -1,6 +1,5 @@
 
 body{
-  /* background-image: url(background_contact.jpg); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,37 +8,40 @@ body{
 }
 
 .column{
-  width: 33.3;
+  width: 33.3%;
   float:left;
-  padding: 200px;
+  padding: 100px;
   position: relative;
   right:200px;
-  bottom: 100px;
+  /* top: 100px; */
+  /* bottom: 100px; */
 
 
 }
-
 .column2{
-  width: 33.3;
+  width: 33.3%;
   float:left;
-  padding: 200px;
+  padding: 100px;
   position: relative;
-  right: 220px;
-  bottom: 600px;
+  right:200px;
+  /* top: 100px; */
+   bottom: 300px;
 }
 .column3{
-  /* width: 33.3;
+  width: 33.3%;
   float:left;
-  padding: 200px; */
+  padding: 100px;
   position: relative;
-  left:640px;
-  bottom: 470px;
+  right:200px;
+  /* top: 100px; */
+   bottom: 600px; 
 }
+
 
 .info{
 text-align: left;
 position: relative;
-left: 240px;
+left: 390px;
 bottom: 230px;
 }
 
@@ -55,6 +57,6 @@ bottom: 230px;
 }
 
 #home:hover{
-  background-color: #F1948A  ;
+  background-color: #F1948A;
   color: white;
 }
