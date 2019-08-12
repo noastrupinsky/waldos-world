@@ -29,3 +29,6 @@ document.getElementById("insta_user").innerHTML=insta_user;
 document.getElementById("snap_user").innerHTML=snap_user;
 document.getElementById("link_user").innerHTML=link_user;
 document.getElementById("twitter_user").innerHTML=twitter_user;
+
+let link =  '../../home.html' + window.location.search;
+document.getElementById("home").innerHTML = link;
