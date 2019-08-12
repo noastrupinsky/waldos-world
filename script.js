@@ -16,10 +16,11 @@ function myFunction() {
       });
       return vars;
  }
-
  var group_name = getUrlVars()["group_name"];
- // document.getElementById("name_variable").innerHTML= name;
+ var test = getUrlVars()["?"];
+
  document.getElementById("group_name_variable").innerHTML= group_name;
 
-
-console.log(name);
+let link = "contact_sheet/contact_sheet.html";
+link = link + window.location.search;
+document.getElementById("link").innerHTML= link;

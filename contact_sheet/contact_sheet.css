@@ -1,12 +1,49 @@
 
 body{
-  background-image: url(background_contact.jpg);
+  /* background-image: url(background_contact.jpg); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
 }
+
+.column{
+  width: 33.3;
+  float:left;
+  padding: 200px;
+  position: relative;
+  right:200px;
+  bottom: 100px;
+
+
+}
+
+.column2{
+  width: 33.3;
+  float:left;
+  padding: 200px;
+  position: relative;
+  right: 220px;
+  bottom: 600px;
+}
+.column3{
+  /* width: 33.3;
+  float:left;
+  padding: 200px; */
+  position: relative;
+  left:640px;
+  bottom: 470px;
+}
+
+.info{
+text-align: left;
+position: relative;
+left: 240px;
+bottom: 230px;
+}
+
+
 
 #home{
   float:left;

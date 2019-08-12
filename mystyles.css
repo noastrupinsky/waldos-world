@@ -1,0 +1,92 @@
+body {
+
+    /* background-image: url("logo_background.jpg"); */
+    background-repeat: no-repeat;
+    background-position: ;
+    background-attachment: scroll;
+    background-size: cover;
+}
+* {
+  box-sizing: border-box;
+}
+
+#button_hex{
+    position: relative;
+    top: 500px;
+    left: 100px;
+
+}
+
+/* .row{
+    position: relative;
+    left: 200px;
+} */
+
+.column {
+  float: left;
+  width: 33.33%;
+  /* padding: 10px; */
+  height: 300px;
+}
+
+.column2{
+  float: left;
+  width: 50%;
+   padding: 10px;
+   height: 300px;
+}
+
+#welcome{
+    float: right;
+    width: 50%;
+    background-color: navy;
+    height: 100%;
+    color: white;
+    text-align: center
+}
+
+
+ .row2{
+  position: relative;
+  left:240px;
+}
+
+
+ #your_groups{
+     position: relative;
+     top: 500px;
+     color: navy;
+     font-size: 60px;
+     float: left;
+     font-weight: 5000;
+     text-decoration: underline;
+
+ }
+
+.button{
+  width: 200px;
+  height: 200px;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border-style: none;
+  color: white;
+  background-color: navy;
+  border-radius: 100%;
+   /* overflow:scroll;  */
+  text-align: center;
+  font-size: 50px;
+  float: left;
+  filter: drop-shadow(0 0 30px #333);
+  transition-duration: 0.4;
+
+}
+
+.button:hover{
+  background-color: blue;
+}
+
+.round-button:active{
+  background-color: #2980b9;
+}
