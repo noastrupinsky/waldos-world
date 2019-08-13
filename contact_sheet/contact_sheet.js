@@ -31,4 +31,10 @@ document.getElementById("link_user").innerHTML=link_user;
 document.getElementById("twitter_user").innerHTML=twitter_user;
 
 let link =  '../../home.html' + window.location.search;
-document.getElementById("home").innerHTML = link;
+
+
+let home_button = document.getElementById("home");
+
+home_button.onclick = function (){
+  window.location = link
+}
