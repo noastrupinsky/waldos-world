@@ -1,5 +1,6 @@
 .heading{
   display: inline;
+  font-size: 6em;
 }
 
 body{
@@ -8,12 +9,14 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center center ;
+  background-attachment: fixed;
   text-align: center;
 }
 
 .checkbox_email{
   display: inline;
-  font-size: 30px;
+  font-size: 4em;
 
 }
 
@@ -23,6 +26,8 @@ input{
 }
 
 .card{
+  padding: 1em;
+  margin: 0 auto;
   border-radius: 20px;
   border-color: black;
   box-shadow: 15px 15px;
@@ -30,25 +35,27 @@ input{
   color: black;
   font-weight: bolder;
   text-align: justify;
-  font-size: 40px;
-  position: relative;
-  left: 300px;
+
+
   text-shadow:0 0 5px white, 0 0 5px white;
 }
 h2{
   text-shadow:0 0 5px white, 0 0 5px white;
+  font-size: 5em;
 }
 
 #test{
-  width: 100px;
-  height: 50px;
-  font-size: 20px;
-  border-radius: 20px;
-  position: relative;
-  left:20px;
+  width: 6em;
+  height: 3em;
+  font-size: 2em;
+  border-radius: 46%;
   transition-duration: 0.4s;
 }
 
 #test:hover{
   background-color: lightgrey;
+}
+
+#email_check{
+  width: 1em;
 }
