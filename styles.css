@@ -2,9 +2,9 @@ body {
 
     background-image: url("home.jpg");
     background-repeat: no-repeat;
-    background-position: ;
-    background-attachment: scroll;
-    background-size: cover;
+    background-position: center center ;
+    background-attachment: fixed;
+    background-size:  cover;
     height: 100%;
 
 }
@@ -14,43 +14,44 @@ body {
 
 /* Create three equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 33.33%;
+  display: flex;
+
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  justify-content: center;
+  /* height: 300px; /* Should be removed. Only for demonstration */ */
 }
 
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
+} */
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5em;
+  flex-wrap: wrap;
 }
 
-.row2{
-  position: relative;
-  left:240px;
-}
 h1 {
   text-align: left;
-  font-size: 100px;
+  font-size: 10em;
   color: white;
-
-  position: relative;
-  bottom: 50px;
+  margin-top: 0;
+}
 }
 
-#title{
-  position: relative;
-  top: -15px;
-  left: 240px;
-  font-size: 100px;
-  color: navy;
-}
 
 .groups{
   position: inherit;
   top: 100px;
+}
+
+.intro{
+  display: flex;
+  justify-content: space-between;
 }
 
 h2 {
@@ -61,24 +62,22 @@ h2 {
   color: 	#49879D;
 }
 
+.button {
 
-.button{
-  width: 200px;
-  height: 200px;
-  text-decoration: none;
-  display: inline-block;
-  outline: none;
-  cursor: pointer;
-  border-style: none;
-  color: 	#0D6791;
-  background-color: white;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 50px;
-  float: left;
-  filter: drop-shadow(0 0 30px #333);
-  transition-duration: 0.4s;
-
+    width: 4em;
+    height: 4em;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-style: none;
+    color: #0D6791;
+    background-color: white;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1000%;
+    filter: drop-shadow(0 0 30px #333);
+    transition-duration: 0.4s;
 }
 
 .button:hover{
@@ -102,22 +101,21 @@ h3 {
 .navbar {
   font-size: 20px;
   font-family: Arial;
-  position: relative;
-  bottom: 430px;
-  right: 100px;
+  padding-top: 1.5em;
+
   transition-duration: 0.4s;
 }
 
 /* Links inside the navbar */
 .navbar a  {
-  float: left;
-  font-family: arial;
-  font-size: 27px;
-  color: 	#0D6791;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition-duration: 0.4s;
+    float: left;
+    font-family: arial;
+    font-size: 3em;
+    color: #0D6791;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.4s;
 }
 
 /* The dropdown container */
@@ -135,14 +133,14 @@ h3 {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 27px;
+  font-size: 2.3em;
   border: none;
   outline: none;
   color: 	#0D6791;
   padding: 14px 16px;
   font-family: arial; /* Important for vertical align on mobile phones */
   margin: 0;
-  font-weight: bolder;/* Important for vertical align on mobile phones */
+  /* font-weight: bolder;/* Important for vertical align on mobile phones */ */
   transition-duration: 0.4s;
 }
 
@@ -155,10 +153,10 @@ h3 {
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  font-size: 27px
+  font-size: 27px;
   position: relative;
   background-color: 	#0D6791;
-  min-width: 160px;
+  /* min-width: 160px; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   transition-duration: 0.4s;

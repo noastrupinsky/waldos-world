@@ -20,7 +20,7 @@ function myFunction() {
  var test = getUrlVars()["?"];
  console.log(group_name);
 
-
+ 
  let style = document.getElementById("group_name_variable");
  if (group_name == undefined){
    style.style.display = "none";
