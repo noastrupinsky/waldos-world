@@ -17,6 +17,10 @@ body{
 
 }
 
+#profile_name{
+  padding-right: 2em;
+}
+
 .info{
 text-align: left;
 
