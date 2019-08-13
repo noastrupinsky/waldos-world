@@ -34,7 +34,7 @@ body{
   position: relative;
   right:200px;
   /* top: 100px; */
-   bottom: 600px; 
+   bottom: 600px;
 }
 
 
@@ -57,6 +57,6 @@ bottom: 230px;
 }
 
 #home:hover{
-  background-color: #F1948A;
+  background-color: #0D6791;
   color: white;
 }

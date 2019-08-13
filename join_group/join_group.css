@@ -3,7 +3,7 @@
 }
 
 body{
-  background-image: url(background_join.jpg);
+  background-image: url(background-join.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,7 +13,8 @@ body{
 
 .checkbox_email{
   display: inline;
-  font-size: 20px;
+  font-size: 30px;
+
 }
 
 input{
@@ -27,9 +28,27 @@ input{
   box-shadow: 15px 15px;
   border-style:groove;
   color: black;
+  font-weight: bolder;
   text-align: justify;
-  font-size: 20px;
+  font-size: 40px;
   position: relative;
-  left: 460px;
-  top: 100px;
+  left: 300px;
+  text-shadow:0 0 5px white, 0 0 5px white;
+}
+h2{
+  text-shadow:0 0 5px white, 0 0 5px white;
+}
+
+#test{
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  position: relative;
+  left:20px;
+  transition-duration: 0.4s;
+}
+
+#test:hover{
+  background-color: lightgrey;
 }

@@ -21,6 +21,8 @@ link_user = "Linkdin: " + link_user;
 var twitter_user = getUrlVars()["twitter_user"];
 twitter_user = "Twitter: " + twitter_user;
 
+
+
 var name = getUrlVars()["name"];
 document.getElementById("group_name").innerHTML=group_name;
 document.getElementById("name").innerHTML=name;
