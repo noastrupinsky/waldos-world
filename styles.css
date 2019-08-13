@@ -30,11 +30,11 @@ body {
   left:240px;
 }
 h1 {
-  position: relative;
-  top: -25px;
-  left: 410px;
+text-align: center;
   font-size: 100px;
   color: #866266;
+  position: relative;
+  bottom: 50px;
 }
 
 #title{
@@ -128,14 +128,15 @@ h3 {
   background-color: 	#49879D;
   font-family: Arial;
   position: relative;
-  bottom: 500px;
+  bottom: 430px;
   right: 1100px;
 }
 
 /* Links inside the navbar */
 .navbar a  {
   float: left;
-  font-size: 20px;
+  font-family: arial;
+  font-size: 27px;
   color: darkgray;
   text-align: center;
   padding: 14px 16px;
@@ -145,16 +146,18 @@ h3 {
 /* The dropdown container */
 .dropdown {
   float: left;
-  font-size: 20px
+  font-size: 27px
   overflow: hidden;
-  /* font-family: Arial; */
+  font-family: arial;
   position: relative;
   color: darkgray;
+  text-decoration: none;
+
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 20px;
+  font-size: 27px;
   border: none;
   outline: none;
   color: darkgray;
@@ -173,7 +176,7 @@ h3 {
 .dropdown-content {
   display: none;
   font-size: 27px
-  position: absolute;
+  position: relative;
   background-color: 	#49879D;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
