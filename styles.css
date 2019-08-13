@@ -30,7 +30,7 @@ body {
 
 .row{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-bottom: 5em;
   flex-wrap: wrap;
 }
