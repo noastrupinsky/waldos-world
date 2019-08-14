@@ -11,36 +11,9 @@
   </h1>
 </div>
 
-  <h3
 
-  </h3>
-<div class = "groups">
-  <div class="row">
-    <div class="column" >
-      <button onclick = "window.location.href = 'contact_sheet/camp.html'"class = "button"> Camp </button>
-
-    </div>
-    <div class="column" >
-    <button onclick = "window.location.href = 'contact_sheet/RBC.html'"class = "button">RBC </button>
-    </div>
-    <div class="column">
-      <button onclick = "window.location.href = 'contact_sheet/sheet_dummy.html'" class = "button"> Class 2020 </button>
-
-    </div>
-  </div>
-
-
-    <div class="row2">
-      <div class="column" >
-          <button onclick = "window.location.href = 'contact_sheet/work_group.html'"class = "button"> Work Group </button>
-      </div>
-      <div class="column" >
-        <button id = "group_name_variable" onclick = "location.href = link" class = "button"></button>
-      </div>
-
-    </div>
+<div id = "groups">
 </div>
-
 
   <div class="navbar">
     <a href="#home">Home</a>
@@ -56,6 +29,28 @@
       </div>
     </div>
   </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#config-web-app -->
+   <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyDST0E3zuxRhWt7NF_oln_1ZZBKzoO3efE",
+  authDomain: "waldo-7996a.firebaseapp.com",
+  databaseURL: "https://waldo-7996a.firebaseio.com",
+  projectId: "waldo-7996a",
+  storageBucket: "waldo-7996a.appspot.com",
+  messagingSenderId: "143490529558",
+  appId: "1:143490529558:web:e3d7faf61a6079b5"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
   <script src = "script.js"> </script>
 </html>

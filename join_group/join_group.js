@@ -13,57 +13,33 @@ console.log(name);
 document.getElementById("variable").innerHTML=group_name;
 
 
-let email_user;
-let insta_user;
-let snap_user;
-let link_user;
-let twitter_user;
-
-var email_check = document.getElementById("email_check");
-var insta_check = document.getElementById('insta_check')
-var snap_check = document.getElementById('snap_check');
-var link_check = document.getElementById('link_check');
-var titter_check = document.getElementById('twitter_check');
-
-
 var button = document.getElementById('test');
 
 let link = "../home.html";
 
-link = link + window.location.search;
-console.log(link);
+
 button.onclick = function(){
-  var name = document.getElementById('name').value;
-  link = link + "&name=" + name;
 
-  if (email_check.checked == true) {
-    email_user = document.getElementById('email_user').value;
-    console.log(email_user);
-    link = link +  "&" + "email_user=" + email_user;
-  }
+var db = firebase.firestore();
 
-  if (insta_check.checked == true) {
-    insta_user = document.getElementById('insta_user').value;
-      console.log(insta_user);
-      link = link + "&" + "insta_user=" + insta_user;
-  }
-  if (snap_check.checked == true) {
-    snap_user = document.getElementById('snap_user').value;
-      console.log(snap_user);
-      link = link + "&" +  "snap_user=" + snap_user;
-  }
-  if (link_check.checked == true) {
-    link_user = document.getElementById('link_user').value;
-      console.log(link_user);
-      link = link + "&" +  "link_user=" + link_user;
-  }
-  if (twitter_check.checked == true) {
-    twitter_user = document.getElementById('twitter_user').value;
-      console.log(twitter_user);
-      link = link + "&" + "twitter_user=" + twitter_user;
-  }
+var groupRef = db.collection("groups");
+var  rbc = groupRef.doc(group_name);
+rbc.collection('users').doc(document.getElementById('name').value).set({
+    name: document.getElementById('name').value,
+    email: document.getElementById('email_user').value,
+    insta: document.getElementById('insta_user').value,
+    twit: document.getElementById('twitter_user').value,
+    snap: document.getElementById('snap_user').value,
+    link: document.getElementById('link_user').value,
+})
+.then(function() {
+    console.log("Document successfully written!");
+    location.href = link;
+})
+.catch(function(error) {
+    console.error("Error writing document: ", error);
+});
 
 
-   location.href = link;
-   console.log(link);
+
 }

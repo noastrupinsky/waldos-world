@@ -21,15 +21,36 @@ function myFunction() {
  console.log(group_name);
 
 
- let style = document.getElementById("group_name_variable");
- if (group_name == undefined){
-   style.style.display = "none";
- }
 
-document.getElementById("group_name_variable").innerHTML= group_name;
 
-let link = "contact_sheet/contact_sheet.html";
+var db = firebase.firestore();
+db.collection("groups").get().then(
+  function(querySnapshot){
+    querySnapshot.forEach(function(doc){
+      console.log(doc.id);
 
-link = link + window.location.search;
-console.log(link);
-document.getElementById("link").innerHTML = link;
+      var row = document.createElement("DIV");
+        row.setAttribute("class", "row");
+      var column = document.createElement("DIV");
+        column.setAttribute("class", "column");
+        row.appendChild(column);
+      let link = 'location.href= '+ "'contact_sheet/contact_sheet.html?group_name=" + doc.id + "'";
+        console.log(link);
+      var button = document.createElement("BUTTON");
+          button.setAttribute('onclick', link);
+          button.setAttribute("class", "button");
+
+        var button_text = document.createTextNode(doc.id);
+
+        button.appendChild(button_text);
+        row.appendChild(button);
+
+
+
+
+      document.getElementById("groups").appendChild(row);
+
+    })
+
+  }
+)

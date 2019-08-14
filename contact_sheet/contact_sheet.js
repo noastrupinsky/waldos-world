@@ -6,34 +6,10 @@ function getUrlVars() {
     return vars;
 }
 var group_name = getUrlVars()["group_name"];
-var email_user = getUrlVars()["email_user"];
-email_user = "Email: " + email_user;
-
-var insta_user = getUrlVars()["insta_user"];
-insta_user = "Instagram: " + insta_user;
-
-var snap_user = getUrlVars()["snap_user"];
-snap_user = "Snapchat: " + snap_user;
-
-var link_user = getUrlVars()["link_user"];
-link_user = "Linkdin: " + link_user;
-
-var twitter_user = getUrlVars()["twitter_user"];
-twitter_user = "Twitter: " + twitter_user;
+document.getElementById("group_name").innerHTML = group_name;
+ let link =  '../home.html'
 
 
-
-var name = getUrlVars()["name"];
-if (group_name){
-document.getElementById("group_name").innerHTML=group_name;
-document.getElementById("name").innerHTML=name;
-document.getElementById("email_user").innerHTML=email_user;
-document.getElementById("insta_user").innerHTML=insta_user;
-document.getElementById("snap_user").innerHTML=snap_user;
-document.getElementById("link_user").innerHTML=link_user;
-document.getElementById("twitter_user").innerHTML=twitter_user;
-}
-let link =  '../home.html' + window.location.search;
 
 
 let home_button = document.getElementById("home");
@@ -45,7 +21,7 @@ home_button.onclick = function (){
 var db = firebase.firestore();
 
 var groupRef = db.collection("groups");
-var  rbc = groupRef.doc('12XIPqr5DsYxngrshine');
+var  rbc = groupRef.doc(group_name);
 rbc.collection('users').get().then(
   function(querySnapshot){
     querySnapshot.forEach(function(doc){
@@ -108,5 +84,6 @@ rbc.collection('users').get().then(
       document.getElementById("div1").appendChild(div);
 
     })
+
   }
 )
