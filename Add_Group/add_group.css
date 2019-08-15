@@ -2,19 +2,23 @@ body{
 
   background-image: url(add_group_background.jpg);
   background-repeat: no-repeat;
-  background-position: ;
-  background-attachment: scroll;
+  background-position: center center ;
+  background-attachment: fixed;
   background-size: cover;
 }
 
 .card{
+  margin: 0 auto;
   border-style:groove;
   color: black;
   text-align: left;
   box-shadow: 10px 10px;
-  position: relative;
-  left: 350px;
   border-radius: 10px;
+  padding: 1em;
+}
+
+h1{
+  font-size: 4em;
 }
 
 #title{
@@ -24,17 +28,19 @@ body{
 
 input{
   border-radius: 10px;
-  width: 400px;
-  height: 30px;
-  font-size: 20px;
+  width: 18em;
+  height: 2em;
+  font-size: 1em;
 }
 
-.add_group_button{
-  width: 150px;
-  height: 50px;
-  border-radius: 10px;
-  transition-duration: 0.4s;
+#div1{border-radius: 10px;width: em;height: 2em;font-size: 1em;}
 
+.add_group_button{
+  width: 4em;
+  height: 3em;
+  border-radius: 90%;
+  transition-duration: 0.4s;
+  font-size: 4em;
 }
 
 .add_group_button:hover, .home:hover{
@@ -42,12 +48,11 @@ input{
 }
 
 .home{
-  width: 140px;
-  height: 40px;
-  border-radius: 10px;
+  width: 4em;
+  height: 3em;
+  border-radius: 21%;
   transition-duration: 0.4s;
-  font-size: 20px;
-  position:relative;
-  bottom: 50px;
-
+  font-size: 5em;
+  /* position:relative; */
+  /* bottom: 50px; */
 }
