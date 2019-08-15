@@ -29,11 +29,9 @@ db.collection("groups").get().then(
     querySnapshot.forEach(function(doc){
       console.log(doc.id);
 
-      var row = document.createElement("DIV");
-        row.setAttribute("class", "row");
       var column = document.createElement("DIV");
         column.setAttribute("class", "column");
-        row.appendChild(column);
+
       let link = 'location.href= '+ "'contact_sheet/contact_sheet.html?group_name=" + doc.id + "'";
         console.log(link);
       var button = document.createElement("BUTTON");
@@ -43,12 +41,12 @@ db.collection("groups").get().then(
         var button_text = document.createTextNode(doc.id);
 
         button.appendChild(button_text);
-        row.appendChild(button);
+        column.appendChild(button);
 
 
 
 
-      document.getElementById("groups").appendChild(row);
+      document.getElementById("row").appendChild(column);
 
     })
 

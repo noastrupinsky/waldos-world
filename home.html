@@ -9,37 +9,41 @@
   <h1 id = "<title">
       Bluepages
   </h1>
-</div>
-
-
-<div id = "groups">
-</div>
 
   <div class="navbar">
     <a href="#home">Home</a>
+
     <a href="#settings">Settings</a>
     <div class="dropdown">
-      <button class="dropbtn">Dropdown
+      <button class="dropbtn">Options
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content">
+      <div class="dropdown-content" >
         <a href="Add_Group/add_group.html">Add Group</a>
         <a href="#">Delete Group</a>
         <a href="new project/search.html">Search</a>
       </div>
     </div>
+
   </div>
+</div>
+
+<div id = "groups">
+  <div id = "row" class = "row">
+  </div>
+</div>
+
+
 </body>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-   https://firebase.google.com/docs/web/setup#config-web-app -->
+
    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
 
 
 <script>
-// Your web app's Firebase configuration
+
 var firebaseConfig = {
   apiKey: "AIzaSyDST0E3zuxRhWt7NF_oln_1ZZBKzoO3efE",
   authDomain: "waldo-7996a.firebaseapp.com",
@@ -49,7 +53,7 @@ var firebaseConfig = {
   messagingSenderId: "143490529558",
   appId: "1:143490529558:web:e3d7faf61a6079b5"
 };
-// Initialize Firebase
+
 firebase.initializeApp(firebaseConfig);
 </script>
   <script src = "script.js"> </script>

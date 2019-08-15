@@ -29,7 +29,7 @@ body {
 
 h1 {
   text-align: left;
-  font-size: 17em;
+  font-size: 9em;
   color: white;
   margin-top: 0;
 }
@@ -37,7 +37,6 @@ h1 {
 
 
 #groups{
-  position: inherit;
   top: 100px;
 }
 
@@ -62,12 +61,13 @@ h2 {
     display: inline-block;
     outline: none;
     cursor: pointer;
+    overflow: scroll;
     border-style: none;
     color: #0D6791;
     background-color: white;
     border-radius: 100%;
     text-align: center;
-    font-size: 100%;
+    font-size: 500%;
     filter: drop-shadow(0 0 30px #333);
     transition-duration: 0.4s;
 }
@@ -91,10 +91,9 @@ h3 {
 
 /* Navbar container */
 .navbar {
-  font-size: 20px;
+  font-size: 2em;
   font-family: Arial;
   padding-top: 1.5em;
-
   transition-duration: 0.4s;
 }
 
@@ -102,7 +101,7 @@ h3 {
 .navbar a  {
     float: left;
     font-family: arial;
-    font-size: 3em;
+    font-size: inherit;
     color: #0D6791;
     text-align: center;
     padding: 14px 16px;
@@ -110,10 +109,10 @@ h3 {
     transition-duration: 0.4s;
 }
 
-/* The dropdown container */
+
 .dropdown {
   float: left;
-  font-size: 27px;
+  font-size: inherit;
   overflow: hidden;
   font-family: arial;
   position: relative;
@@ -121,11 +120,13 @@ h3 {
   text-decoration: none;
   transition-duration: 0.4s;
 
-}
+
+
+ }
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 2.3em;
+  font-size: inherit;
   border: none;
   outline: none;
   color: 	#0D6791;
@@ -142,25 +143,30 @@ h3 {
 }
 
 
-.dropdown-content {
+ .dropdown-content {
   display: none;
-  font-size: 27px;
-  position: relative;
+  font-size: inherit;
   background-color: 	#0D6791;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
   transition-duration: 0.4s;
+  right: 0;
+
 }
 
 
 .dropdown-content a {
-  float: none;
+
+  color: white;
+  transition-duration: 0.4s;
+  background-color: #0D6791;  float: none;
   color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
+  position: relative;
   transition-duration: 0.4s;
+  right: 0px;
+
 }
 
 
