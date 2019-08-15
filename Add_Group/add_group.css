@@ -18,7 +18,7 @@ body{
 }
 
 h1{
-  font-size: 4em;
+  font-size: 2em;
 }
 
 #title{
@@ -40,7 +40,7 @@ input{
   height: 3em;
   border-radius: 90%;
   transition-duration: 0.4s;
-  font-size: 4em;
+  font-size: 1em;
 }
 
 .add_group_button:hover, .home:hover{
@@ -52,7 +52,7 @@ input{
   height: 3em;
   border-radius: 21%;
   transition-duration: 0.4s;
-  font-size: 5em;
+  font-size: 1em;
   /* position:relative; */
   /* bottom: 50px; */
 }
