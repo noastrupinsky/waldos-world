@@ -1,5 +1,5 @@
 
-let submit_button = document.getElementById("submit");
+let submit_button = document.getElementById("submit_button");
 let add_another_email = document.getElementById('add_email');
 
 let email_list = [];
@@ -7,25 +7,22 @@ let length_emails = 1;
 
 
 
+
 submit_button.onclick = function(){
+let group_name = document.getElementById("group_name").value;
 
-  for ( let i = 0; i < length_emails; i++ ){
-    var emails = document.getElementsByClassName('emails')[i].value;
-    email_list.push(emails);
-    console.log(email_list);
-};
+var db = firebase.firestore();
 
-}
-add_another_email.onclick = function(ev) {
-  length_emails++;
-  console.log(length_emails);
-  var para = document.createElement("input");
-  para.classList.add("emails");
-  para.setAttribute("type", "email");
-  var node = document.createTextNode("");
-  para.appendChild(node);
-  var element = document.getElementById("div1");
-  element.appendChild(para);
+db.collection("groups").doc(group_name).set({
+  
+})
+.then(function() {
+    console.log("Document successfully written!");
+    location.href = "https://us-central1-waldo-7996a.cloudfunctions.net/email"
+})
+.catch(function(error) {
+    console.error("Error writing document: ", error);
+});
 
 
 };

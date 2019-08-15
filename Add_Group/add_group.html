@@ -21,8 +21,8 @@
 
   <div class="card" style= "width: 50rem; height: 40rem;" >
   <div class="card-body">
-      <form  method = "GET" class="group_add"  method="post" action="https://us-central1-waldo-7996a.cloudfunctions.net/email">
-        <h1>Group Name: <input type="text" name="group_name"> </h1>
+      <form  method = "GET" class="group_add"  >
+        <h1>Group Name: <input type="text" id ="group_name" name="group_name" value= ""> </h1>
         <h1>Description: <input type="text" name="description"> </h1>
         <h1>Who would you like to invite?   (if more then one seperate the emails with a comma)</h1>
 
@@ -30,12 +30,13 @@
           <input class = "emails" type="email" name="email" multiple >
         </div>
         <br>
-        <!-- <button class = "add_group_button" id = "add_email" type="button">Add another email</button> <br> -->
+
         <br>
-        <input class = "add_group_button" id = "submit" type = "submit" value = 'Submit'>
+
 
 
       </form>
+      <button class = "add_group_button" id = "submit_button">Submit</button>
   </div>
 
 
