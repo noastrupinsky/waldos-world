@@ -39,7 +39,7 @@ rbc.collection('users').get().then(
       var img = document.createElement("IMG");
         img.setAttribute("src", "profile_icon.png");
         div.appendChild(img);
-      var name = document.createElement("H2");
+        var name = document.createElement("H2");
         var name_text = document.createTextNode(name_data);
         name.appendChild(name_text);
         div.appendChild(name);

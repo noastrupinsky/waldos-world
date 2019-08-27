@@ -39,9 +39,16 @@ db.collection("groups").get().then(
           button.setAttribute("class", "button");
 
         var button_text = document.createTextNode(doc.id);
-
         button.appendChild(button_text);
         column.appendChild(button);
+      var deleteButton = document.createElement("BUTTON");
+        deleteButton.setAttribute("class", "del");
+        delete_text = document.createTextNode("x");
+        deleteButton.appendChild(delete_text);
+        column.appendChild(deleteButton);
+
+
+
 
 
 
@@ -52,3 +59,17 @@ db.collection("groups").get().then(
 
   }
 )
+
+
+let delete_button = document.getElementById("delete");
+
+
+delete_button.onclick = function(){
+  let x = document.getElementsByClassName("del");
+  let button = document.getElementsByClassName("button");
+  console.log(x);
+  for (var i = 0; i < x.length; i++){
+  x[i].style.display = "block";
+  button[i].style.animation = "shake 0.5s";
+}
+}
