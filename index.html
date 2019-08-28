@@ -6,7 +6,7 @@
   </head>
   <body>
     <script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
-    <meta name="google-signin-client_id" content="143490529558-36gg2unr6lr3bt45ljgl8fl4i2ap0qok.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="143490529558-9m6vm475f3jdtci2b23usehv92q3g6t2.apps.googleusercontent.com">
 
     <script>
 function renderButton() {
@@ -23,6 +23,7 @@ function renderButton() {
 
 
 function onSuccess(googleUser) {
+  console.log("onSuccess");
     gapi.client.load('oauth2', 'v2', function () {
         var request = gapi.client.oauth2.userinfo.get({
             'userId': 'me'
@@ -34,6 +35,7 @@ function onSuccess(googleUser) {
 
             document.getElementById("gSignIn").style.display = "none";
             document.getElementsByClassName("userContent")[0].style.display = "block";
+            window.location.href = "https://waldo-7996a.firebaseapp.com/home.html";
         });
     });
 }
